@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furnomi – Nội thất tinh tế, sống hiện đại</title>
+  <style>
+    :root {
+      --bg-color: #f5efe7;
+      --text-color: #4b3f35;
+      --accent-color: #b08968;
+      --light-color: #fff8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      background-color: var(--light-color);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    header img.logo {
+      height: 60px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      margin: 0 16px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background-image: url("banner-nameless.png");
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-color);
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(245,239,231,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background-color: var(--light-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 16px;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .cta {
+      text-align: center;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 60px 8%;
+      border-radius: 12px;
+    }
+
+    .cta h2 {
+      margin-bottom: 16px;
+    }
+
+    .cta a {
+      background-color: white;
+      color: var(--accent-color);
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #f9e7d5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 8%;
+      font-size: 0.9rem;
+      color: #7c6f66;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Furnomi logo" class="logo" />
+    <nav>
+      <a href="#about">Về chúng tôi</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Furnomi – Nội thất tinh tế, Sống hiện đại</h1>
+      <p>Khám phá thế giới nội thất phong cách Scandinavian, kết hợp giữa sự tối giản, tiện nghi và vẻ đẹp tự nhiên.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Về Furnomi</h2>
+    <p>Furnomi là thương hiệu nội thất hiện đại dành cho người Việt trẻ yêu thích không gian sống tinh tế. Chúng tôi mang đến những sản phẩm nội thất được chọn lọc kỹ lưỡng – kết hợp giữa chất liệu tự nhiên, thiết kế tối giản và tính ứng dụng cao.</p>
+  </section>
+
+  <section id="products">
+    <h2 style="text-align:center;">Sản phẩm nổi bật</h2>
+    <div class="products">
+      <div class="product">
+        <img src="chair.jpg" alt="Ghế Furnomi">
+        <div class="product-info">
+          <h3>Ghế Furnomi Lounge</h3>
+          <p>Thiết kế thanh thoát, chất liệu gỗ tự nhiên, mang lại sự thoải mái tuyệt đối.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="table.jpg" alt="Bàn Furnomi">
+        <div class="product-info">
+          <h3>Bàn Coffee Mộc</h3>
+          <p>Bàn tròn gỗ sồi phong cách Bắc Âu, hoàn hảo cho mọi không gian sống.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="lamp.jpg" alt="Đèn Furnomi">
+        <div class="product-info">
+          <h3>Đèn Gỗ Trắng</h3>
+          <p>Đèn để bàn tông ấm, ánh sáng nhẹ nhàng, phù hợp cho không gian thư giãn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Bắt đầu thiết kế không gian sống của bạn cùng Furnomi</h2>
+    <a href="#contact">Liên hệ ngay</a>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 Furnomi. Tất cả các quyền được bảo lưu.</p>
+    <p>Hotline: 0869812198</p>
+  </footer>
+</body>
+</html>
